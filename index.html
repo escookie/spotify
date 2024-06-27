@@ -5,14 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
     <script src="https://kit.fontawesome.com/5622f2ba18.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">    
 </head>
 <body>
     <nav>
         <div><img src="images/logo.png" alt=""></div>
-        <div>
-            <a href="#" class="nav-item">Premium</a>
-            <a href="#" class="nav-item">Support</a>
+        <div class="nav-container">
+            <div class="nav-item-dropdown">
+                <a href="#" class="nav-item">Premium</a>
+                <div class="dropdown-1">
+                    <a href="#" class="dropdown-item hover-underline-animation">Premium 개인</a>
+                    <a href="#" class="dropdown-item hover-underline-animation">Premium 듀오</a>
+                </div>
+            </div>
+            <div class="nav-item-dropdown">
+                <a href="#" class="nav-item">Support</a>
+                <div class="dropdown-2">
+                    <a href="#" class="dropdown-item hover-underline-animation">결제 도움말</a>
+                    <a href="#" class="dropdown-item hover-underline-animation">계정 도움말</a>
+                    <a href="#" class="dropdown-item hover-underline-animation">요금제 관련</a>
+                </div>
+            </div>
             <a href="#" class="nav-item">Download</a>
             <span class="nav-item">|</span>
             <a href="#" class="nav-item">Sign up</a>
@@ -83,7 +96,7 @@
             </div>
             <div class="forth-box">
                 <div>
-                    <i class="fas fa-globe-africa" aria-hidden="true"></i> USA
+                    <i class="fas fa-globe-africa" aria-hidden="true">USA</i> 
                 </div>
                 <div>
                     © 2021 Spotify AB

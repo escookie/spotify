@@ -9,8 +9,10 @@ a{
 }
 a:hover {
     color: #1ed760;
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
 }
+
+
 nav{
     height: 80px;
     background-color: black;
@@ -31,6 +33,85 @@ nav img{
     padding: 28px 17px;
     font-weight: 700; 
 }
+.nav-item:hover{
+    transform: scale(1.05);
+}
+
+
+/* 기본 네비게이션 스타일 */
+.nav-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-item {
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+    position: relative;
+}
+
+
+/* 드롭다운 메뉴 기본 스타일 */
+.dropdown-1, .dropdown-2 {
+    display: none;
+    position: absolute;
+    background-color: #252525;
+    font-size: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 10px 23px;
+    z-index: 1;
+    top: 55px; /* 링크 아래에 표시되도록 조정 */
+    
+}
+
+.dropdown-item {
+    padding: 5px 0px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.dropdown-item:hover{
+    color: #1ed760;    
+}
+
+
+.hover-underline-animation {
+    display:block;
+    position: relative;
+    color: rgb(177, 177, 177);
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(30, 215, 96, 0.5);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    margin-bottom: 5px;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .nav-item-dropdown{
+   justify-content: center;
+  }
+
+.nav-item-dropdown:hover .dropdown-1,
+.nav-item-dropdown:hover .dropdown-2 {
+    display: block;
+}
+/*  */
 
 main{
     height: 700px;
@@ -111,10 +192,10 @@ footer{
     padding-right: 15%; */
 }
 .txt2{
-    position: relative;
-    right: -1.2em;
-    /* padding-left: 15%;
-    padding-bottom: 7%; */
+    /* position: relative;
+    left: -1.2em; */
+    padding-left: 15%;
+    padding-bottom: 7%;
 }
 .txt3{
     color: #1ed760;
