@@ -1,0 +1,34 @@
+section{text-align: center; background-color: #f8f8f8; padding: 5%;}
+
+.t0-5{font-size: clamp(0.8rem, 0.7vw, 0.8rem); color: #474747;line-height: 120%; padding-top: 5%;}
+.t1{font-size: clamp(1rem, 1vw, 1rem); line-height: 140%;}
+.t2{font-size: clamp(1.5rem, 2.3vw, 2rem)}
+.t3{font-size: clamp(1.5rem, 3vw, 2.5rem)}
+.under{text-decoration: underline;}
+
+.pt0-5{padding-top: 0.2%;}
+.pt3{padding-top: 3%;}
+.pt5{padding-top: 5%;}
+.pb3{padding-bottom: 3%;}
+.pb22{padding-bottom: 22%;}
+.bold{font-weight: 700;}
+.blue-tag{background-color: #2E77D0; color: #fff; font-size: clamp(0.9rem, 1vw, 1rem); padding: 2%; border-radius: 3px; font-weight: 700;}
+.line{background-color: rgba(93, 93, 93, 0.8); height: 1px; margin: 5% 0 10% 0;}
+.flex{display: flex; align-items: center;}
+.center{text-align: center;}
+
+.select-box {grid-template-columns: 33% 33% 33%; display: grid; justify-content: center;}
+@media screen and (max-width:900px) {   
+    .select-box {grid-template-columns: 80%; display: grid;}  }
+
+.select-box > div{ box-shadow: 0 0 5px rgba(0, 0, 0, 0.3) ; border-radius: 10px; padding: 5%; margin: 3%; text-align: left}
+
+.hPIlex {
+    fill: currentcolor;
+    width: var(--encore-graphic-size-decorative-base, 24px);
+    height: var(--encore-graphic-size-decorative-base, 24px);
+}
+
+.black-btn{background-color: black; color: white; border-radius: 50px; width: 100%; padding: 8px 0;}
+.black-btn:hover{scale: 1.05; transition: 0.1s ease;}
+
