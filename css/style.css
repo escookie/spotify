@@ -12,6 +12,8 @@ a:hover {
     /* transform: scale(1.05); */
 }
 
+button{cursor: pointer;}
+
 
 nav{
     height: 80px;
@@ -179,7 +181,7 @@ footer{
     text-align: right;
 }
 .headline{
-    font-size: clamp(4.0rem, 8vw, 8rem);
+    font-size: clamp(3.0rem, 8vw, 8rem);
     color: #1ed760;
     font-weight: 900;
     display: flex;
@@ -188,18 +190,18 @@ footer{
 .txt1{
     position: relative;
     left:-1.2em;
-    /* padding-top: 15%;
-    padding-right: 15%; */
+    padding-top: 2%;
 }
+ @media screen and (max-width:1300px) { .txt1{left:0em}  }
 .txt2{
-    /* position: relative;
-    left: -1.2em; */
     padding-left: 15%;
-    padding-bottom: 7%;
+    padding-bottom: 5%;
 }
+@media screen and (max-width:1300px) { .txt2{padding-left: 0;}  }
+
 .txt3{
     color: #1ed760;
-    font-size: 18px;
+    font-size: clamp(1rem, 1.8vw, 1.8rem);
     line-height: 24px;
     padding-bottom: 40px;
     text-align: center;
