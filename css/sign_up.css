@@ -1,0 +1,20 @@
+.sign-up-section h4{padding-right: 13%;}
+@media screen and (max-width:1700px) {
+    .sign-up-section h4{padding-right: 16%;}
+}
+@media screen and (max-width:1600px) {
+    .sign-up-section h4{padding-right: 20%;}
+}
+@media screen and (max-width:1400px) {
+    .sign-up-section h4{padding-right: 23%;}
+}
+@media screen and (max-width:1200px) {
+    .sign-up-section h4{padding-right: 25%;}
+}
+@media screen and (max-width:1000px) {
+    .sign-up-section h4{padding-right: 35%;}
+}
+@media screen and (max-width:800px) {
+    .sign-up-section h4{padding-right: 50%;}
+}
+
