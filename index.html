@@ -9,7 +9,65 @@
 </head>
 <body>
     <nav>
-        <div><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+        
+        
+        <div class="nav-container-mob">
+            <div><a href="index.html"><img src="images/logo.png"></a></div>
+        
+            <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    // 처음에는 서브메뉴 숨기기
+                    $("#nav-dropDown ul.sub").hide();
+                    $("#nav-dropDown ul.sub1").hide();
+        
+                    // 메인 메뉴 클릭 시 서브메뉴 토글
+                    $("#nav-dropDown ul.menu li.main1").click(function(){
+                        $(this).children("ul.sub").slideToggle("fast");
+                    });
+        
+                    // 서브메뉴 클릭 시 서브1 메뉴 토글
+                    $("#nav-dropDown ul.sub li").click(function(event){
+                        event.stopPropagation(); // 부모 메뉴의 이벤트 전파를 막기 위해 사용
+                        $(this).children("ul.sub1").slideToggle("fast");
+                    });
+                });
+            </script>
+            
+            <div id="nav-dropDown">
+                <ul class="menu">
+                    <li class="main1"><a href="#"><i class="fa-solid fa-bars"></i></a>
+                        <ul class="sub">
+                            <li>
+                                <a href="#">Premium</a>
+                                <ul class="sub1">
+                                    <li><a href="premium_individual.html">Premium 개인</a></li>
+                                    <li><a href="premium_duo.html">Premium 듀오</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Support</a>
+                                <ul class="sub1">
+                                    <li><a href="premium_individual.html">결제 도움말</a></li>
+                                    <li><a href="premium_duo.html">계정 도움말</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Go spotify</a>
+                                <ul class="sub1">
+                                    <li><a href="sign_up.html">Sign up</a></li>
+                                    <li><a href="login.html">Log in</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        
+        <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
         <div class="nav-container">
             <div class="nav-item-dropdown">
                 <a href="#" class="nav-item">Premium</a>
@@ -67,8 +125,8 @@
         </div>   
     </main>
     <footer>
-        <div class="first-second-box">
-            <div class="first-box">
+        <div class="footer-box">
+            <div class="footer-first-box">
                 <div><img src="images/logo.png" alt=""></div>
                 <div>
                     <div class="sub-title">COMPANY</div>
