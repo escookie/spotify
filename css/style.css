@@ -42,7 +42,9 @@ nav img{
 
 /* 기본 네비게이션 스타일 */
 .nav-container {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding: 10px;
 }
