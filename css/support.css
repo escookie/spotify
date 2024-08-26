@@ -1,8 +1,10 @@
 body {
     background: linear-gradient(to bottom, #197639 10%, black 30%);
+    background-repeat: no-repeat;
     height: 100vh;
     margin: 0;
     color: #fff;
+    background-color: black;
 }
 
 section {
@@ -22,7 +24,7 @@ section {
     }
 }
 
-/* first section */
+/* 1 section */
 .support-container-1section {
     padding: 5% 0 3% 0;
 }
@@ -197,3 +199,63 @@ section {
     transform: rotate(25deg);
     box-shadow: 0 0 3px rgba(81, 81, 81, 0.5);
 }
+
+/* 1section box roll over */
+.support-box > div > a:hover{color: white; text-decoration: underline;}
+
+/* 2 section */
+.support-container-2section{
+    background-color: #2a2a2a;
+}
+@media screen and (max-width:600px) {
+    .support-container-2section{
+        margin-top: 5%;
+    }
+}
+.support-container-2section > div > div:nth-child(1){
+    padding-top: 7%;
+    font-size:clamp(1.5rem, 1.7vw, 1.9rem);
+    font-weight: 700;
+}
+.support-container-2section > div > div:nth-child(2){
+    padding-bottom: 6%;
+}
+.support-container-2section-in {padding-top: 5%;}
+.support-container-2section-in > div{
+    padding: 2.5% 0;
+}
+
+.support-container-2section-in > div { display: flex; justify-content: space-between;}
+.support-container-2section-in > div > div > svg{ width: 20px; vertical-align: middle;}
+
+.support-container-2section a:hover{color: #fff; text-decoration: underline;}
+
+/* 3 sectioin */
+.support-container-3section{text-align: center;}
+
+.support-container-3section > div > div:nth-child(1){
+    font-size: clamp(2rem, 2.5vw, 2.5rem);
+    font-weight: 700;
+    padding: 10% 0 5% 0;
+}
+.support-container-3section > div > div:nth-child(2){
+    padding-bottom: 5%;
+    line-height: 160%;
+}
+.support-container-3section > div > button {
+    background-color: #1fdf64;
+    padding: 3% 5%;
+    border-radius: 50px;
+    font-size:large;
+    font-weight: 700;
+    transition: transform 0.1s ease;
+}
+.support-container-3section > div > button:hover{
+    transform: scale(1.03);
+}
+@media screen and (max-width:600px) {
+    .support-container-3section > div > button{
+        padding: 4% 7%;
+    }
+}
+
