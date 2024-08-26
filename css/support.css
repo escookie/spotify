@@ -1,0 +1,199 @@
+body {
+    background: linear-gradient(to bottom, #197639 10%, black 30%);
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.support-container {
+    width: 40%;
+    max-width: 560px;
+}
+
+@media screen and (max-width:600px) {
+    .support-container {
+        width: 90%;
+    }
+}
+
+/* first section */
+.support-container-1section {
+    padding: 5% 0 3% 0;
+}
+
+.support-container-1section>div>div:first-child {
+    color: rgba(154, 154, 154, 0.8);
+}
+
+.support-container-1section>div>div:nth-child(2) {
+    font-size: clamp(2rem, 3.7vw, 3rem);
+    font-weight: 600;
+    padding-top: 1%;
+}
+
+.support-container-1section>div>div:nth-child(3) {
+    font-size: clamp(1.5rem, 1.5vw, 2rem);
+    font-weight: 700;
+    color: #acacac;
+    padding: 8% 0 5% 0;
+}
+
+.support-container>div>div:nth-child(3) a {
+    color: #fff;
+}
+
+/* search section */
+
+.search-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.search-container .fa-magnifying-glass {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+#support-search {
+    padding: 10px 30px;
+    width: calc(100% - 60px);
+    font-size: medium;
+
+}
+
+/* box section */
+.support-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* box 내용 제어 */
+.support-box>div {
+    position: relative;
+    padding: 10px 40px 10px 10px;
+    height: 80px;
+    display: flex;
+    width: calc(33% - 60px); /* 3열 레이아웃 */
+    border-radius: 5px;
+    overflow: hidden;
+    font-weight: 700;
+}
+@media screen and (max-width:600px) {
+    .support-box>div{width: calc(50% - 60px);}
+}
+
+/* box1 background img */
+.support-box-1 {
+    position: relative;
+    background-color: #af2896;
+}
+
+.support-box-1::before {
+    content: '';
+    position: absolute;
+    right: -15px;
+    bottom: 5px;
+    width: 64px;
+    height: 64px;
+    background-image: url('https://cdn.sanity.io/images/tsbk0zvv/production/a1f5c90620915aba2fc363330ecd1dbff17b7736-128x128.png?w=64&fit=max&auto=format');
+    background-size: cover;
+    transform: rotate(25deg);
+    box-shadow: 0 0 3px rgba(81, 81, 81, 0.5);
+}
+
+/* box2 background img */
+.support-box-2 {
+    background-color: #537aa1;
+}
+.support-box-2::before {
+    content: '';
+    position: absolute;
+    right: -15px;
+    bottom: 5px;
+    width: 64px;
+    height: 64px;
+    background-image: url('https://cdn.sanity.io/images/tsbk0zvv/production/972abc9b7961e17d356b069c8be9dbaaf3ea51f3-128x128.png?w=64&fit=max&auto=format');
+    background-size: cover;
+    transform: rotate(25deg);
+    box-shadow: 0 0 3px rgba(81, 81, 81, 0.5);
+}
+
+/* box3 background img */
+.support-box-3 {
+    background-color: #8c1932;
+}
+.support-box-3::before {
+    content: '';
+    position: absolute;
+    right: -15px;
+    bottom: 5px;
+    width: 64px;
+    height: 64px;
+    background-image: url('https://cdn.sanity.io/images/tsbk0zvv/production/10bb309130cdd8dfe85a0e0e130ecdedc0ca22c6-128x128.png?w=64&fit=max&auto=format');
+    background-size: cover;
+    transform: rotate(25deg);
+    box-shadow: 0 0 3px rgba(81, 81, 81, 0.5);
+}
+
+/* box4 background img */
+.support-box-4 {
+    background-color: #b06239;
+}
+.support-box-4::before {
+    content: '';
+    position: absolute;
+    right: -15px;
+    bottom: 5px;
+    width: 64px;
+    height: 64px;
+    background-image: url('https://cdn.sanity.io/images/tsbk0zvv/production/59459c592409b198e88b2b4cd6e4da99306a04fa-128x128.png?w=64&fit=max&auto=format');
+    background-size: cover;
+    transform: rotate(25deg);
+    box-shadow: 0 0 3px rgba(81, 81, 81, 0.5);
+}
+
+/* box5 background img */
+.support-box-5 {
+    background-color: #006450;
+}
+.support-box-5::before {
+    content: '';
+    position: absolute;
+    right: -15px;
+    bottom: 5px;
+    width: 64px;
+    height: 64px;
+    background-image: url('https://cdn.sanity.io/images/tsbk0zvv/production/3e2fdd408d9175cbf6dc77fbd24fa0667aec5867-128x128.png?w=64&fit=max&auto=format');
+    background-size: cover;
+    transform: rotate(25deg);
+    box-shadow: 0 0 3px rgba(81, 81, 81, 0.5);
+}
+
+/* box6 background img */
+.support-box-6 {
+    background-color: #757575;
+}
+.support-box-6::before {
+    content: '';
+    position: absolute;
+    right: -15px;
+    bottom: 5px;
+    width: 64px;
+    height: 64px;
+    background-image: url('https://cdn.sanity.io/images/tsbk0zvv/production/c39439e03b41892767854a2dafae387d68e397c5-128x128.png?w=64&fit=max&auto=format');
+    background-size: cover;
+    transform: rotate(25deg);
+    box-shadow: 0 0 3px rgba(81, 81, 81, 0.5);
+}
