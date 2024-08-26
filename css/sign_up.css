@@ -51,7 +51,6 @@ a:hover {
 .btn-area {
     display: flex;
     justify-content: center;
-    font-size: clamp(0.8rem, 1vw, 1.5rem);
 }
 
 .btn-style {
@@ -133,7 +132,8 @@ a:hover {
 
 .bottom-line {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    margin: 0 100px 30px 100px;
+    margin-top: 5%;
+    margin-bottom: 10%;
 }
 
 h1 {
