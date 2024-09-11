@@ -56,6 +56,9 @@ nav {
     z-index: 1;
     top: 55px; /* 링크 아래에 표시되도록 조정 */
   }
+  @media screen and (max-width:600px) {
+    .dropdown-1{top: 45px;}
+  }
   .dropdown-item {
     padding: 5px 0px;
     color: rgb(255, 255, 255);
